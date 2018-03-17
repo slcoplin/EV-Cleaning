@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PivotTable.js</title>
+
+        <!-- external libs from cdnjs -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/pivot.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/pivot.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/d3_renderers.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/c3_renderers.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/export_renderers.min.js"></script>
+
+        <style>
+            body {font-family: Verdana;}
+            .node {
+              border: solid 1px white;
+              font: 10px sans-serif;
+              line-height: 12px;
+              overflow: hidden;
+              position: absolute;
+              text-indent: 2px;
+            }
+            .c3-line, .c3-focused {stroke-width: 3px !important;}
+            .c3-bar {stroke: white !important; stroke-width: 1;}
+            .c3 text { font-size: 12px; color: grey;}
+            .tick line {stroke: white;}
+            .c3-axis path {stroke: grey;}
+            .c3-circle { opacity: 1 !important; }
+            .c3-xgrid-focus {visibility: hidden !important;}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(function(){
+                if(window.location != window.parent.location)
+                    $("<a>", {target:"_blank", href:""})
+                        .text("[pop out]").prependTo($("body"));
+
+                $("#output").pivotUI(
+                    $.csv.toArrays($("#output").text()),
+                    $.extend({
+                        renderers: $.extend(
+                            $.pivotUtilities.renderers,
+                            $.pivotUtilities.c3_renderers,
+                            $.pivotUtilities.d3_renderers,
+                            $.pivotUtilities.export_renderers
+                            ),
+                        hiddenAttributes: [""]
+                    }, {})
+                ).show();
+             });
+        </script>
+        <div id="output" style="display: none;">,error,station_id,year,month,day,hour,min,sec
+0,LittleEnergyUsed,20201,2017,11,16,03,04,09
+1,PowerTooLow,20201,2017,11,25,06,36,11
+2,LostDatapoints,20202,2017,11,07,15,42,07
+3,LittleEnergyUsed,20202,2017,11,12,19,34,57
+4,PowerTooLow,20203,2017,11,01,18,42,03
+5,LittleEnergyUsed,20203,2017,11,15,18,03,28
+6,LittleEnergyUsed,20203,2017,11,17,17,52,56
+7,LostDatapoints,20203,2017,11,20,13,06,01
+8,LittleEnergyUsed,20203,2017,11,27,18,22,27
+9,LittleEnergyUsed,20203,2017,11,28,18,33,46
+10,LostDatapoints,20206,2017,11,10,00,31,54
+11,LittleEnergyUsed,20206,2017,11,22,04,40,15
+12,LostDatapoints,20208,2017,11,09,00,17,59
+13,LostDatapoints,20208,2017,11,28,05,55,13
+14,LittleEnergyUsed,20209,2017,11,10,16,27,02
+15,PowerTooLow,20211,2017,11,27,18,22,57
+16,LostDatapoints,20212,2017,11,09,05,18,26
+17,LittleEnergyUsed,20212,2017,11,20,23,04,53
+18,LittleEnergyUsed,20214,2017,11,20,03,13,35
+19,PowerTooLow,20215,2017,11,14,17,03,25
+20,LostDatapoints,20302,2017,11,09,01,33,53
+21,LittleEnergyUsed,20302,2017,11,17,21,14,28
+22,LostDatapoints,20302,2017,11,19,03,55,16
+23,PowerTooLow,20302,2017,11,21,00,29,57
+24,LittleEnergyUsed,20302,2017,11,26,22,31,34
+25,LittleEnergyUsed,20302,2017,11,29,00,56,43
+26,LostDatapoints,20302,2017,11,29,02,18,29
+27,LittleEnergyUsed,20303,2017,11,04,22,22,17
+28,LittleEnergyUsed,20303,2017,11,05,23,20,20
+29,LostDatapoints,20303,2017,11,09,03,58,28
+30,LostDatapoints,20303,2017,11,10,14,07,14
+31,PowerTooLow,20303,2017,11,14,15,24,24
+32,PowerTooLow,20305,2017,11,07,03,18,47
+33,LittleEnergyUsed,20305,2017,11,12,18,50,29
+34,PowerTooLow,20305,2017,11,14,01,41,09
+35,LittleEnergyUsed,20305,2017,11,14,16,45,46
+36,LittleEnergyUsed,20305,2017,11,16,16,08,31
+37,LittleEnergyUsed,20305,2017,11,29,00,59,07
+38,LostDatapoints,20305,2017,11,29,03,31,41
+39,PowerTooLow,20307,2017,11,02,15,53,13
+40,LostDatapoints,20307,2017,11,03,02,42,56
+41,LostDatapoints,20307,2017,11,09,08,00,12
+42,LostDatapoints,20307,2017,11,23,01,56,53
+43,LittleEnergyUsed,20310,2017,11,06,20,58,14
+44,LittleEnergyUsed,20310,2017,11,08,02,13,40
+45,LittleEnergyUsed,20310,2017,11,08,20,00,10
+46,LittleEnergyUsed,20310,2017,11,15,03,11,39
+47,LostDatapoints,20310,2017,11,19,23,53,12
+48,LittleEnergyUsed,20310,2017,11,21,01,02,14
+49,PowerTooLow,20310,2017,11,29,16,52,58
+50,LostDatapoints,20316,2017,11,02,23,53,26
+51,LostDatapoints,20316,2017,11,03,02,39,34
+52,PowerTooLow,20316,2017,11,08,18,13,21
+53,LittleEnergyUsed,20316,2017,11,08,23,37,56
+54,PowerTooLow,20316,2017,11,11,17,11,40
+55,PowerTooLow,20316,2017,11,14,17,13,03
+56,PowerTooLow,20316,2017,11,15,22,07,04
+57,LostDatapoints,20316,2017,11,28,22,52,56
+58,LittleEnergyUsed,20318,2017,11,12,05,43,12
+59,PowerTooLow,20318,2017,11,16,17,38,00
+60,LittleEnergyUsed,20320,2017,11,16,17,12,46
+61,LittleEnergyUsed,20320,2017,11,16,20,54,09
+62,PowerTooLow,20320,2017,11,17,00,20,48
+63,PowerTooLow,20320,2017,11,17,17,57,28
+64,LittleEnergyUsed,20321,2017,11,15,00,50,52
+65,LittleEnergyUsed,20321,2017,11,16,17,33,38
+66,LittleEnergyUsed,20321,2017,11,21,17,42,00
+67,PowerTooLow,20321,2017,11,22,18,07,08
+68,PowerTooLow,20321,2017,11,28,17,49,58
+69,PowerTooLow,20322,2017,11,01,19,26,04
+70,PowerTooLow,20322,2017,11,11,00,00,48
+71,PowerTooLow,20327,2017,11,14,01,31,08
+72,PowerTooLow,20327,2017,11,30,19,57,55
+73,PowerTooLow,20330,2017,11,02,14,49,38
+74,PowerTooLow,20330,2017,11,14,01,00,43
+</div>
+    </body>
+</html>
