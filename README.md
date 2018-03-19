@@ -1563,7 +1563,7 @@ div.WordSection1
 
 <h1>EV-Cleaning</h1>
 
-<p class=MsoNormal>This Repository contains Python libraries in the 'bin'
+<p class=MsoNormal>This repository contains Python libraries in the 'bin'
 folder, as well as documentation for some of the libraries. </p>
 
 <h2>Cleaning</h2>
