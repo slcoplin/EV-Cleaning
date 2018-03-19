@@ -14,16 +14,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Sophia Coplin</o:Author>
   <o:LastAuthor>Sophia Coplin</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>2735</o:TotalTime>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>2741</o:TotalTime>
   <o:Created>2018-03-19T03:47:00Z</o:Created>
-  <o:LastSaved>2018-03-19T03:47:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>1303</o:Words>
-  <o:Characters>7640</o:Characters>
-  <o:Lines>293</o:Lines>
-  <o:Paragraphs>255</o:Paragraphs>
-  <o:CharactersWithSpaces>8688</o:CharactersWithSpaces>
+  <o:LastSaved>2018-03-19T04:04:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>1213</o:Words>
+  <o:Characters>7109</o:Characters>
+  <o:Lines>273</o:Lines>
+  <o:Paragraphs>237</o:Paragraphs>
+  <o:CharactersWithSpaces>8085</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -31,14 +31,15 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:DoNotOrganizeInFolder/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=dataStoreItem href="data_cleaner_documentation_item0006.xml"
-target="data_cleaner_documentation_props007.xml">
+<link rel=dataStoreItem href="data_cleaner_documentation_item0007.xml"
+target="data_cleaner_documentation_props008.xml">
 <link rel=themeData href="data_cleaner_documentation_themedata.thmx">
 <link rel=colorSchemeMapping
 href="data_cleaner_documentation_colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:Zoom>130</w:Zoom>
+  <w:View>Print</w:View>
+  <w:Zoom>120</w:Zoom>
   <w:HideSpellingErrors/>
   <w:HideGrammaticalErrors/>
   <w:SpellingState>Clean</w:SpellingState>
@@ -650,6 +651,7 @@ href="data_cleaner_documentation_colorschememapping.xml">
    Name="List Table 7 Colorful Accent 6"/>
  </w:LatentStyles>
 </xml><![endif]-->
+<link rel=plchdr href="data_cleaner_documentation_plchdr.html">
 <style>
 <!--
  /* Font Definitions */
@@ -953,7 +955,6 @@ p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
 	font-style:italic;}
 p.MsoToc1, li.MsoToc1, div.MsoToc1
 	{mso-style-update:auto;
-	mso-style-noshow:yes;
 	mso-style-priority:39;
 	mso-style-next:Normal;
 	margin-top:0in;
@@ -975,7 +976,6 @@ p.MsoToc1, li.MsoToc1, div.MsoToc1
 	mso-bidi-theme-font:minor-bidi;}
 p.MsoToc2, li.MsoToc2, div.MsoToc2
 	{mso-style-update:auto;
-	mso-style-noshow:yes;
 	mso-style-priority:39;
 	mso-style-next:Normal;
 	margin-top:0in;
@@ -997,7 +997,6 @@ p.MsoToc2, li.MsoToc2, div.MsoToc2
 	mso-bidi-theme-font:minor-bidi;}
 p.MsoToc3, li.MsoToc3, div.MsoToc3
 	{mso-style-update:auto;
-	mso-style-noshow:yes;
 	mso-style-priority:39;
 	mso-style-next:Normal;
 	margin-top:0in;
@@ -1166,8 +1165,7 @@ p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:major-bidi;}
 a:link, span.MsoHyperlink
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
+	{mso-style-priority:99;
 	color:#0563C1;
 	mso-themecolor:hyperlink;
 	text-decoration:underline;
@@ -1296,8 +1294,7 @@ span.MsoBookTitle
 	font-variant:small-caps;
 	font-weight:bold;}
 p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
-	{mso-style-noshow:yes;
-	mso-style-priority:39;
+	{mso-style-priority:39;
 	mso-style-qformat:yes;
 	mso-style-parent:"Heading 1";
 	mso-style-next:Normal;
@@ -2142,245 +2139,93 @@ table.MsoTable15List6ColorfulOddRow
 
 <div class=WordSection1>
 
-<p class=MsoTitle><a name="_Toc509167689">Module </a><span class=SpellE><span
-style='mso-bookmark:_Toc509167689'>data_cleaner</span></span><span
-style='mso-bookmark:_Toc509167689'></span></p>
+<p class=MsoTitle>Module <span class=SpellE>data_cleaner</span></p>
 
-<h2><a name="_Toc509167690">Overview</a></h2>
+<h2><a name="_Toc509170137">Overview</a></h2>
 
 <p class=MsoNormal>This module finds the validity and features of individual
 charging sessions. All functions use data of type Entry. To create an instance
-of Entry from a charging profile <span class=SpellE>dataframe</span>, use ‘<span
-class=SpellE>df_to_entry</span>’.</p>
+of Entry from a charging profile <span class=SpellE>dataframe</span>, use '<span
+class=SpellE>df_to_entry</span>'.</p>
 
 <w:Sdt SdtDocPart="t" DocPartType="Table of Contents" DocPartUnique="t"
  ID="-32034769">
- <h2>Table of Contents<w:sdtPr></w:sdtPr></h2>
- <p class=MsoToc1><!--[if supportFields]><span style='mso-element:field-begin'></span><span
- style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \h \z \u <span
- style='mso-element:field-separator'></span><![endif]--><span
- class=MsoHyperlink><span style='color:windowtext;mso-no-proof:yes;text-decoration:
- none;text-underline:none'><a href="#_Toc509167689"><span style='color:windowtext;
- text-decoration:none;text-underline:none'>Module data_cleaner<span
- style='display:none;mso-hide:screen'><span style='mso-tab-count:1'>  </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167689 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600380039000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc2><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167690"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>Overview<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'>   </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167690 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390030000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc2><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167691"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>Classes<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'>  </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167691 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390031000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167692"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>class Entry<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'>  </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167692 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390032000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc2><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167693"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>Functions<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'>  </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167693 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390033000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167694"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>df_to_entry(df)<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167694 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390034000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167695"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>is_clean( data, min_charge_time = np.timedelta64(20,
- 'm'), min_average_time_gap = np.timedelta64(11, 's'), max_gap_allowed =
- np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000, max_time =
- np.timedelta64(20, 'h') )<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1 dotted'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167695 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390035000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167696"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>clean_data( data, min_charge_time = np.timedelta64(20,
- 'm'), min_average_time_gap = np.timedelta64(11, 's'), max_gap_allowed =
- np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000, max_time =
- np.timedelta64(20, 'h'), other_tests = False )<span style='display:none;
- mso-hide:screen'><span style='mso-tab-count:1 dotted'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167696 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390036000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167697"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>session_length( data )<span style='display:none;
- mso-hide:screen'><span style='mso-tab-count:1'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167697 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390037000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167698"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>datapoint_fraction( data, supposed_time_gap =
- np.timedelta64(10, 's') )<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1 dotted'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167698 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390038000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167699"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>average_gap( data )<span style='display:none;mso-hide:
- screen'><span style='mso-tab-count:1'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167699 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003600390039000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167700"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>max_gap( data )<span style='display:none;mso-hide:screen'><span
- style='mso-tab-count:1'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167700 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003700300030000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoToc3><span class=MsoHyperlink><span style='color:windowtext;
- mso-no-proof:yes;text-decoration:none;text-underline:none'><a
- href="#_Toc509167701"><span style='color:windowtext;text-decoration:none;
- text-underline:none'>Helper functions for ‘is_clean’ and ‘clean_data’<span
- style='display:none;mso-hide:screen'><span style='mso-tab-count:1 dotted'> </span></span></span><!--[if supportFields]><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'><span style='mso-element:field-begin'></span> PAGEREF
- _Toc509167701 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
- style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
- text-underline:none'>1<!--[if gte mso 9]><xml>
-  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003500300039003100360037003700300031000000</w:data>
- </xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
- display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
- style='mso-element:field-end'></span></span><![endif]--></a></span></span><span
- style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:110%;mso-no-proof:
- yes'><o:p></o:p></span></p>
- <p class=MsoNormal><!--[if supportFields]><b><span style='mso-no-proof:yes'><span
- style='mso-element:field-end'></span></span></b><![endif]--><o:p>&nbsp;</o:p></p>
+ <h2><a name="_Toc509170138">Table of Contents</a><w:sdtPr></w:sdtPr></h2>
+ <p class=MsoToc2 style='tab-stops:right dotted 467.5pt'><!--[if supportFields]><span
+ style='color:black;mso-themecolor:text1'><span style='mso-element:field-begin'></span><span
+ style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \n \h \z \u <span
+ style='mso-element:field-separator'></span></span><![endif]--><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170140"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>class Entry</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170142"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>df_to_entry(df)</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170143"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>is_clean( data, min_charge_time =
+ np.timedelta64(20, 'm'), min_average_time_gap = np.timedelta64(11, 's'),
+ max_gap_allowed = np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000,
+ max_time = np.timedelta64(20, 'h') )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170144"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>clean_data( data, min_charge_time =
+ np.timedelta64(20, 'm'), min_average_time_gap = np.timedelta64(11, 's'),
+ max_gap_allowed = np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000,
+ max_time = np.timedelta64(20, 'h'), other_tests = False )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170145"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>session_length( data )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170146"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>datapoint_fraction( data,
+ supposed_time_gap = np.timedelta64(10, 's') )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170147"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>average_gap( data )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170148"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>max_gap( data )</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;mso-themecolor:
+ text1;mso-no-proof:yes;text-decoration:none;text-underline:none'><a
+ href="#_Toc509170149"><span style='color:black;mso-themecolor:text1;
+ text-decoration:none;text-underline:none'>Helper functions for 'is_clean' and 'clean_data'</span></a></span></span><span
+ style='font-size:11.0pt;line-height:110%;color:black;mso-themecolor:text1;
+ mso-no-proof:yes'><o:p></o:p></span></p>
+ <p class=MsoNormal><!--[if supportFields]><span style='color:black;mso-themecolor:
+ text1'><span style='mso-element:field-end'></span></span><![endif]--><o:p>&nbsp;</o:p></p>
 </w:Sdt>
 
-<h2><a name="_Toc509167691">Classes</a></h2>
+<h2><a name="_Toc509170139">Classes</a></h2>
 
-<h3><a name="_Toc509167692"></a><span class=GramE><span style='mso-bookmark:
-_Toc509167692'>class</span></span><span style='mso-bookmark:_Toc509167692'>
+<h3><a name="_Toc509170140"></a><span class=GramE><span style='mso-bookmark:
+_Toc509170140'>class</span></span><span style='mso-bookmark:_Toc509170140'>
 Entry</span></h3>
 
 <p class=MsoNormal>Stores data about one charging session. </p>
@@ -2417,7 +2262,7 @@ at a given time.</p>
 <h4><span class=SpellE>get_<span class=GramE>curr</span></span><span
 class=GramE>(</span>time)</h4>
 
-<p class=MsoNormal>Function to get the current from ‘profile’ at a requested
+<p class=MsoNormal>Function to get the current from 'profile' at a requested
 time.</p>
 
 <h4>__<span class=SpellE>init</span>__ (self, start, end, <span class=SpellE>energyDemand</span>,
@@ -2425,11 +2270,11 @@ profile)</h4>
 
 <p class=MsoNormal>Returns an instance of Entry with parameters as given.</p>
 
-<h2><a name="_Toc509167693">Functions</a></h2>
+<h2><a name="_Toc509170141">Functions</a></h2>
 
-<h3><a name="_Toc509167694"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167694'>df_to_<span class=GramE>entry</span></span></span><span
-style='mso-bookmark:_Toc509167694'><span class=GramE>(</span><span
+<h3><a name="_Toc509170142"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170142'>df_to_<span class=GramE>entry</span></span></span><span
+style='mso-bookmark:_Toc509170142'><span class=GramE>(</span><span
 class=SpellE>df</span>)</span></h3>
 
 <h4>Parameters</h4>
@@ -2499,7 +2344,7 @@ class=SpellE>df</span>)</span></h3>
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
   #CCCCCC;mso-background-themecolor:text1;mso-background-themetint:51;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'>One session’s charging profile</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>One session's charging profile</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'><i style='mso-bidi-font-style:
   normal'>Index</i>: time for given <span class=SpellE>datapoint</span></p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><i
@@ -2509,7 +2354,7 @@ class=SpellE>df</span>)</span></h3>
  </tr>
 </table>
 
-<h4><a name="_Toc509167695">Returns</a></h4>
+<h4>Returns</h4>
 
 <table class=MsoTable15List2 border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
@@ -2521,29 +2366,26 @@ class=SpellE>df</span>)</span></h3>
   border-right:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
   solid windowtext .5pt;mso-border-bottom-alt:solid #666666 .5pt;mso-border-bottom-themecolor:
   text1;mso-border-bottom-themetint:153;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:5'><span style='mso-bookmark:_Toc509167695'><span
-  style='mso-bidi-font-weight:bold'>Name<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:5'><span style='mso-bidi-font-weight:
+  bold'>Name<o:p></o:p></span></p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
   <td width=290 valign=top style='width:251.4pt;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid #666666 1.0pt;mso-border-bottom-themecolor:
   text1;mso-border-bottom-themetint:153;border-right:none;mso-border-top-alt:
   solid windowtext .5pt;mso-border-bottom-alt:solid #666666 .5pt;mso-border-bottom-themecolor:
   text1;mso-border-bottom-themetint:153;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:1'><span style='mso-bookmark:_Toc509167695'><span
-  style='mso-bidi-font-weight:bold'>Type<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><span style='mso-bidi-font-weight:
+  bold'>Type<o:p></o:p></span></p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
   <td width=362 valign=top style='width:4.25in;border-top:solid windowtext 1.0pt;
   border-left:none;border-bottom:solid #666666 1.0pt;mso-border-bottom-themecolor:
   text1;mso-border-bottom-themetint:153;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:solid #666666 .5pt;
   mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:153;
   mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:1'><span style='mso-bookmark:_Toc509167695'><span
-  style='mso-bidi-font-weight:bold'>Description<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><span style='mso-bidi-font-weight:
+  bold'>Description<o:p></o:p></span></p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
  </tr>
  <tr style='mso-yfti-irow:0;mso-yfti-lastrow:yes;height:15.25pt'>
   <td width=55 valign=top style='width:41.3pt;border-top:none;border-left:solid windowtext 1.0pt;
@@ -2553,19 +2395,17 @@ class=SpellE>df</span>)</span></h3>
   mso-border-top-themetint:153;mso-border-left-alt:solid windowtext .5pt;
   mso-border-bottom-alt:solid windowtext .5pt;background:#CCCCCC;mso-background-themecolor:
   text1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:68'><span style='mso-bookmark:_Toc509167695'><span
-  style='mso-bidi-font-weight:bold'>data<o:p></o:p></span></span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:68'><span style='mso-bidi-font-weight:
+  bold'>data<o:p></o:p></span></p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
   <td width=290 valign=top style='width:251.4pt;border:none;border-bottom:solid windowtext 1.0pt;
   mso-border-top-alt:solid #666666 .5pt;mso-border-top-themecolor:text1;
   mso-border-top-themetint:153;mso-border-top-alt:solid #666666 .5pt;
   mso-border-top-themecolor:text1;mso-border-top-themetint:153;mso-border-bottom-alt:
   solid windowtext .5pt;background:#CCCCCC;mso-background-themecolor:text1;
   mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='mso-bookmark:_Toc509167695'>Entry</span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>Entry</p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
   <td width=362 valign=top style='width:4.25in;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid #666666 .5pt;mso-border-top-themecolor:text1;
@@ -2574,20 +2414,19 @@ class=SpellE>df</span>)</span></h3>
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;background:
   #CCCCCC;mso-background-themecolor:text1;mso-background-themetint:51;
   padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='mso-bookmark:_Toc509167695'>Entry
-  with values calculated from profile. </span></p>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='mso-bookmark:_Toc509167695'><span
-  class=SpellE>energyDemand</span> from integrating ‘<span class=SpellE>df</span>’
-  and assuming 208 V.</span></p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>Entry with values calculated from
+  profile. </p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE>energyDemand</span>
+  from integrating '<span class=SpellE>df</span>' and assuming 208 V.</p>
   </td>
-  <span style='mso-bookmark:_Toc509167695'></span>
  </tr>
 </table>
 
-<p class=MsoNormal><span style='mso-bookmark:_Toc509167695'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<h3><span style='mso-bookmark:_Toc509167695'><span class=SpellE>is_<span
-class=GramE>clean</span></span><span class=GramE>(</span> data, <span
+<h3><a name="_Toc509170143"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170143'>is_<span class=GramE>clean</span></span></span><span
+style='mso-bookmark:_Toc509170143'><span class=GramE>(</span> data, <span
 class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
 class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
 class=SpellE>max_gap_allowed</span> = np.timedelta64(1, 'm'), <span
@@ -2933,7 +2772,7 @@ given criteria or not, respectively.</p>
   mso-border-top-themecolor:text1;mso-border-top-themetint:153;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>A list of functions to be run on ‘data’ and returned.</p>
+  <p class=MsoNormal>A list of functions to be run on 'data' and returned.</p>
   <p class=MsoNormal>For example, a function that takes data and returns the
   length of the session.</p>
   </td>
@@ -2944,9 +2783,9 @@ given criteria or not, respectively.</p>
 
 <p class=MsoNormal>Boolean, True is the data has no problems, False otherwise.</p>
 
-<h3><a name="_Toc509167696"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167696'>clean_<span class=GramE>data</span></span></span><span
-style='mso-bookmark:_Toc509167696'><span class=GramE>(</span> data, <span
+<h3><a name="_Toc509170144"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170144'>clean_<span class=GramE>data</span></span></span><span
+style='mso-bookmark:_Toc509170144'><span class=GramE>(</span> data, <span
 class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
 class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
 class=SpellE>max_gap_allowed</span> = np.timedelta64(1, 'm'), <span
@@ -3060,8 +2899,8 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   solid #666666 .5pt;mso-border-bottom-themecolor:text1;mso-border-bottom-themetint:
   153;mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>Minimum length of session to be valid.</p>
-  <p class=MsoNormal>If ‘data’ does not pass this criterion, second element of return
-  error will be “<span class=SpellE>ShortTime</span>”.</p>
+  <p class=MsoNormal>If 'data' does not pass this criterion, second element of
+  return error will be “<span class=SpellE>ShortTime</span>”.</p>
   <p class=MsoNormal>Default: 20 minutes</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
@@ -3101,8 +2940,8 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   text1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Minimum length of session to be
   valid.</p>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'>If ‘data’ does not pass this
-  criterion, second element of return error will be “<span class=SpellE>BigGap</span>”.</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>If 'data' does not pass this criterion,
+  second element of return error will be “<span class=SpellE>BigGap</span>”.</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Default: 1 minute</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>This criterion will be ignored if
   None.</p>
@@ -3143,7 +2982,7 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   <p class=MsoNormal>Large gaps indicate connectivity issues with the station.
   Even short gaps seem to cause problematic data. If this is resolved, 10
   minutes or greater <span class=GramE>is</span> appropriate.</p>
-  <p class=MsoNormal>If ‘data’ does not pass this criterion, second element of
+  <p class=MsoNormal>If 'data' does not pass this criterion, second element of
   return error will be “<span class=SpellE>BigGap</span>”.</p>
   <p class=MsoNormal>Default: 1 minute</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
@@ -3185,8 +3024,8 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Minimum average gap between <span
   class=SpellE>datapoints</span> in profile. If average gap is large, data has
   not been recorded frequently enough.</p>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'>If ‘data’ does not pass this
-  criterion, second element of return error will be “<span class=SpellE>LostDatapoints</span>”.</p>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>If 'data' does not pass this criterion,
+  second element of return error will be “<span class=SpellE>LostDatapoints</span>”.</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Default: 11 seconds</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>This criterion will be ignored if
   None.</p>
@@ -3224,7 +3063,7 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   153;mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal><span class=SpellE>Minumum</span> energy consumed in the
   session to be considered valid, in kWh.</p>
-  <p class=MsoNormal>If ‘data’ does not pass this criterion, second element of
+  <p class=MsoNormal>If 'data' does not pass this criterion, second element of
   return error will be “<span class=SpellE>LittleEnergyUsed</span>”.</p>
   <p class=MsoNormal>Default: 1 (kWh)</p>
   <p class=MsoNormal>This criterion will be ignored if 0.</p>
@@ -3266,7 +3105,7 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   text1;mso-background-themetint:51;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Minimum power reached for session
   to be valid, in Watts.</p>
-  <p class=MsoNormal style='mso-yfti-cnfc:64'>If ‘data’ does not pass this
+  <p class=MsoNormal style='mso-yfti-cnfc:64'>If 'data' does not pass this
   criterion, second element of return error will be “<span class=SpellE>PowerTooLow</span>”.</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Default: 2000 (W)</p>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>This criterion will be ignored if
@@ -3301,7 +3140,7 @@ whether the data meets all given criteria, why, and other tests</span>.</p>
   mso-border-top-themecolor:text1;mso-border-top-themetint:153;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>A list of functions to be run on ‘data’ and returned.</p>
+  <p class=MsoNormal>A list of functions to be run on 'data' and returned.</p>
   <p class=MsoNormal>For example, a function that takes data and returns the
   length of the session.</p>
   </td>
@@ -3453,23 +3292,23 @@ class=SpellE>other_results</span>*)</p>
   153;background:#CCCCCC;mso-background-themecolor:text1;mso-background-themetint:
   51;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
   <p class=MsoNormal style='mso-yfti-cnfc:64'>Each element corresponds to the
-  output of each function in ‘<span class=SpellE>other_tests</span>’, in order.</p>
+  output of each function in '<span class=SpellE>other_tests</span>', in order.</p>
   </td>
  </tr>
 </table>
 
-<h3><a name="_Toc509167697"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167697'>session_<span class=GramE>length</span></span></span><span
-style='mso-bookmark:_Toc509167697'><span class=GramE>(</span> data )</span></h3>
+<h3><a name="_Toc509170145"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170145'>session_<span class=GramE>length</span></span></span><span
+style='mso-bookmark:_Toc509170145'><span class=GramE>(</span> data )</span></h3>
 
 <p class=MsoNormal>Takes data of type Entry </p>
 
 <p class=MsoNormal>Returns the length of time from the first <span
 class=SpellE>datapoint</span> to last in a profile.</p>
 
-<h3><a name="_Toc509167698"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167698'>datapoint_<span class=GramE>fraction</span></span></span><span
-style='mso-bookmark:_Toc509167698'><span class=GramE>(</span> data, <span
+<h3><a name="_Toc509170146"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170146'>datapoint_<span class=GramE>fraction</span></span></span><span
+style='mso-bookmark:_Toc509170146'><span class=GramE>(</span> data, <span
 class=SpellE>supposed_time_gap</span> = np.timedelta64(10, 's') )</span></h3>
 
 <p class=MsoNormal>Takes data of type Entry and an expected <span class=SpellE>timedelta</span>
@@ -3477,29 +3316,29 @@ of type numpy.timedelta64.</p>
 
 <p class=MsoNormal>Returns the fraction of <span class=SpellE>datapoints</span>
 in a profile compared to the number of points expected based on the length of
-time and given ‘<span class=SpellE>supposed_time_gap</span>’.</p>
+time and given '<span class=SpellE>supposed_time_gap</span>'.</p>
 
-<h3><a name="_Toc509167699"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167699'>average_<span class=GramE>gap</span></span></span><span
-style='mso-bookmark:_Toc509167699'><span class=GramE>(</span> data )</span></h3>
+<h3><a name="_Toc509170147"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170147'>average_<span class=GramE>gap</span></span></span><span
+style='mso-bookmark:_Toc509170147'><span class=GramE>(</span> data )</span></h3>
 
 <p class=MsoNormal>Takes data of type Entry </p>
 
 <p class=MsoNormal>Returns the average gap in time between consecutive <span
 class=SpellE>datapoints</span> in the <span class=SpellE>data.profile</span>.</p>
 
-<h3><a name="_Toc509167700"></a><span class=SpellE><span style='mso-bookmark:
-_Toc509167700'>max_<span class=GramE>gap</span></span></span><span
-style='mso-bookmark:_Toc509167700'><span class=GramE>(</span> data )</span></h3>
+<h3><a name="_Toc509170148"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170148'>max_<span class=GramE>gap</span></span></span><span
+style='mso-bookmark:_Toc509170148'><span class=GramE>(</span> data )</span></h3>
 
 <p class=MsoNormal>Takes data of type Entry </p>
 
 <p class=MsoNormal>Returns the maximum gap in time between two consecutive <span
 class=SpellE>datapoints</span> in the <span class=SpellE>data.profile</span>.</p>
 
-<h3><a name="_Toc509167701">Helper functions for ‘</a><span class=SpellE><span
-style='mso-bookmark:_Toc509167701'>is_clean</span></span><span
-style='mso-bookmark:_Toc509167701'>’ and ‘<span class=SpellE>clean_data</span>’</span>
+<h3><a name="_Toc509170149">Helper functions for '</a><span class=SpellE><span
+style='mso-bookmark:_Toc509170149'>is_clean</span></span><span
+style='mso-bookmark:_Toc509170149'>' and '<span class=SpellE>clean_data</span>'</span>
 </h3>
 
 <h4>_<span class=SpellE>long_<span class=GramE>enough</span></span><span
