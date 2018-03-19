@@ -9,30 +9,36 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="data_cleaner_documentation2_files/filelist.xml">
+<link rel=File-List href="data_cleaner_documentation_filelist.xml">
 <!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>sophiacoplin</o:Author>
   <o:LastAuthor>Sophia Coplin</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>0</o:TotalTime>
-  <o:Created>2018-03-19T04:38:00Z</o:Created>
-  <o:LastSaved>2018-03-19T04:38:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>1222</o:Words>
-  <o:Characters>7164</o:Characters>
-  <o:Lines>275</o:Lines>
-  <o:Paragraphs>239</o:Paragraphs>
-  <o:CharactersWithSpaces>8147</o:CharactersWithSpaces>
+  <o:Revision>18</o:Revision>
+  <o:TotalTime>24</o:TotalTime>
+  <o:Created>2018-03-19T04:40:00Z</o:Created>
+  <o:LastSaved>2018-03-19T09:19:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>1314</o:Words>
+  <o:Characters>7490</o:Characters>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>8787</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DoNotOrganizeInFolder/>
+ </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="data_cleaner_documentation2_files/themedata.thmx">
+<link rel=themeData href="data_cleaner_documentation_themedata.thmx">
 <link rel=colorSchemeMapping
-href="data_cleaner_documentation2_files/colorschememapping.xml">
+href="data_cleaner_documentation_colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:Zoom>120</w:Zoom>
+  <w:View>Print</w:View>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -630,21 +636,21 @@ href="data_cleaner_documentation2_files/colorschememapping.xml">
 	mso-font-charset:0;
 	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
 @font-face
 	{font-family:"Calibri Light";
 	panose-1:2 15 3 2 2 2 4 3 2 4;
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:-1610601745 1073750139 0 0 511 0;}
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
 @font-face
 	{font-family:Calibri;
 	panose-1:2 15 5 2 2 2 4 3 2 4;
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
-	mso-font-signature:-520082689 1073786111 9 0 511 0;}
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -1197,7 +1203,6 @@ span.IntenseQuoteChar
 p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
 	{mso-style-name:msotitlecxspfirst;
 	mso-style-unhide:no;
-	mso-style-link:"Title Char";
 	margin:0in;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
@@ -1243,6 +1248,12 @@ p.msochpdefault, li.msochpdefault, div.msochpdefault
 	font-family:"Calibri",sans-serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1292,14 +1303,16 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<h1><span style='mso-fareast-font-family:"Times New Roman"'>Module data_cleaner<o:p></o:p></span></h1>
+<h1><span style='mso-fareast-font-family:"Times New Roman"'>Module <span
+class=SpellE>data_cleaner</span><o:p></o:p></span></h1>
 
 <h2><a name="_Toc509170137"><span style='mso-fareast-font-family:"Times New Roman"'>Overview</span></a><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
 
 <p class=MsoNormal>This module finds the validity and features of individual
 charging sessions. All functions use data of type Entry. To create an instance
-of Entry from a charging profile dataframe, use 'df_to_entry'.</p>
+of Entry from a charging profile <span class=SpellE>dataframe</span>, use '<span
+class=SpellE>df_to_entry</span>'.</p>
 
 <h2><a name="_Toc509170138"><span style='mso-fareast-font-family:"Times New Roman"'>Table
 of Contents</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
@@ -1309,102 +1322,128 @@ none;text-underline:none'><a href="#_Toc509170140"><span style='color:black;
 text-decoration:none;text-underline:none'>class Entry</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170142"><span style='color:black;
-text-decoration:none;text-underline:none'>df_to_entry(df)</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170142"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>df_to_entry</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>(<span
+class=SpellE>df</span>)</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170143"><span style='color:black;
-text-decoration:none;text-underline:none'>is_clean( data, min_charge_time =
-np.timedelta64(20, 'm'), min_average_time_gap = np.timedelta64(11, 's'),
-max_gap_allowed = np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000,
-max_time = np.timedelta64(20, 'h') )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170143"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>is_clean</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data, <span
+class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
+class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
+class=SpellE>max_gap_allowed</span> = np.timedelta64(5, 'm'), <span
+class=SpellE>min_energy</span> = 1, <span class=SpellE>min_maxpower</span> =
+2000, <span class=SpellE>max_time</span> = np.timedelta64(20, 'h') )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170144"><span style='color:black;
-text-decoration:none;text-underline:none'>clean_data( data, min_charge_time =
-np.timedelta64(20, 'm'), min_average_time_gap = np.timedelta64(11, 's'),
-max_gap_allowed = np.timedelta64(1, 'm'), min_energy = 1, min_maxpower = 2000,
-max_time = np.timedelta64(20, 'h'), other_tests = False )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170144"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>clean_data</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data, <span
+class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
+class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
+class=SpellE>max_gap_allowed</span> = np.timedelta64(555, 'm'), <span
+class=SpellE>min_energy</span> = 1, <span class=SpellE>min_maxpower</span> =
+2000, <span class=SpellE>max_time</span> = np.timedelta64(20, 'h'), <span
+class=SpellE>other_tests</span> = False )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170145"><span style='color:black;
-text-decoration:none;text-underline:none'>session_length( data )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170145"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>session_length</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170146"><span style='color:black;
-text-decoration:none;text-underline:none'>datapoint_fraction( data, supposed_time_gap
-= np.timedelta64(10, 's') )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170146"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>datapoint_fraction</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data, <span
+class=SpellE>supposed_time_gap</span> = np.timedelta64(10, 's') )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170147"><span style='color:black;
-text-decoration:none;text-underline:none'>average_gap( data )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170147"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>average_gap</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
-none;text-underline:none'><a href="#_Toc509170148"><span style='color:black;
-text-decoration:none;text-underline:none'>max_gap( data )</span></a></span></span></p>
+none;text-underline:none'><a href="#_Toc509170148"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>max_gap</span></span><span
+style='color:black;text-decoration:none;text-underline:none'>( data, <span
+class=SpellE>more_info</span> = False )</span></a></span></span></p>
 
 <p class=MsoToc3><span class=MsoHyperlink><span style='color:black;text-decoration:
 none;text-underline:none'><a href="#_Toc509170149"><span style='color:black;
-text-decoration:none;text-underline:none'>Helper functions for 'is_clean' and
-'clean_data'</span></a></span></span></p>
+text-decoration:none;text-underline:none'>Helper functions for '<span
+class=SpellE>is_clean</span>' and '<span class=SpellE>clean_data</span>'</span></a></span></span></p>
 
 <p class=MsoNormal><a name="_Toc509170139">&nbsp;</a></p>
 
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>Classes<o:p></o:p></span></h2>
 
-<h3><a name="_Toc509170140"><span style='mso-fareast-font-family:"Times New Roman"'>class
-Entry</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+<h3><a name="_Toc509170140"></a><span class=GramE><span style='mso-bookmark:
+_Toc509170140'><span style='mso-fareast-font-family:"Times New Roman"'>class</span></span></span><span
+style='mso-bookmark:_Toc509170140'><span style='mso-fareast-font-family:"Times New Roman"'>
+Entry</span></span><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
 <p class=MsoNormal>Stores data about one charging session. </p>
 
 <p class=MsoNormal>Attributes:</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>startTime<o:p></o:p></span></h4>
+<h4><span class=SpellE><span class=GramE><span style='mso-fareast-font-family:
+"Times New Roman"'>startTime</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h4>
 
-<p class=MsoNormal>Time of first datapoint recorded.</p>
-
-<p class=MsoNormal>If user input is added, create a different attribute for
-this class (e.g. supposedStart).</p>
-
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>endTime<o:p></o:p></span></h4>
-
-<p class=MsoNormal>Time of last datapoint recorded.</p>
+<p class=MsoNormal>Time of first <span class=SpellE>datapoint</span> recorded.</p>
 
 <p class=MsoNormal>If user input is added, create a different attribute for
-this class (e.g. supposedEnd).</p>
+this class (e.g. <span class=SpellE>supposedStart</span>).</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>energyDemand<o:p></o:p></span></h4>
+<h4><span class=SpellE><span class=GramE><span style='mso-fareast-font-family:
+"Times New Roman"'>endTime</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h4>
+
+<p class=MsoNormal>Time of last <span class=SpellE>datapoint</span> recorded.</p>
+
+<p class=MsoNormal>If user input is added, create a different attribute for
+this class (e.g. <span class=SpellE>supposedEnd</span>).</p>
+
+<h4><span class=SpellE><span class=GramE><span style='mso-fareast-font-family:
+"Times New Roman"'>energyDemand</span></span></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h4>
 
 <p class=MsoNormal>Energy used in the profile, in AV. Integral of profile over
 time, assuming 208 V.</p>
 
 <p class=MsoNormal>If user input is added, create a different attribute for
-this class (e.g. supposedEnergyDemand).</p>
+this class (e.g. <span class=SpellE>supposedEnergyDemand</span>).</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>profile<o:p></o:p></span></h4>
+<h4><span class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>profile</span></span><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h4>
 
-<p class=MsoNormal>pandas.DataFrame with pandas.Timestamp index and column
-&quot;mamps_last&quot; corresponding to the current charging (in mA) at a given
-time.</p>
+<p class=MsoNormal><span class=SpellE><span class=GramE>pandas.DataFrame</span></span>
+with <span class=SpellE>pandas.Timestamp</span> index and column &quot;<span
+class=SpellE>mamps_last</span>&quot; corresponding to the current charging (in
+mA) at a given time.</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>get_curr(time)<o:p></o:p></span></h4>
-
-<p class=MsoNormal>Function to get the current from 'profile' at a requested
-time.</p>
-
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>__init__ (self, start,
-end, energyDemand, profile)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>__<span
+class=SpellE>init</span>__ (self, start, end, <span class=SpellE>energyDemand</span>,
+profile)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Returns an instance of Entry with parameters as given.</p>
 
 <h2><a name="_Toc509170141"><span style='mso-fareast-font-family:"Times New Roman"'>Functions</span></a><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
 
-<h3><a name="_Toc509170142"><span style='mso-fareast-font-family:"Times New Roman"'>df_to_entry(df)</span></a><span
+<h3><a name="_Toc509170142"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170142'><span style='mso-fareast-font-family:"Times New Roman"'>df_to_<span
+class=GramE>entry</span></span></span></span><span style='mso-bookmark:_Toc509170142'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170142'><span class=SpellE><span style='mso-fareast-font-family:
+"Times New Roman"'>df</span></span></span><span style='mso-bookmark:_Toc509170142'><span
+style='mso-fareast-font-family:"Times New Roman"'>)</span></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Creates
-an instance of Entry from a charging session DataFrame.<o:p></o:p></span></p>
+an instance of Entry from a charging session <span class=SpellE>DataFrame</span>.<o:p></o:p></span></p>
 
 <h4><span style='mso-fareast-font-family:"Times New Roman"'>Parameters<o:p></o:p></span></h4>
 
@@ -1431,20 +1470,22 @@ an instance of Entry from a charging session DataFrame.<o:p></o:p></span></p>
   <td width=55 valign=top style='width:41.3pt;border-top:none;border-left:solid windowtext 1.0pt;
   border-bottom:solid windowtext 1.0pt;border-right:none;background:#CCCCCC;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>df</p>
+  <p class=MsoNormal><span class=SpellE>df</span></p>
   </td>
   <td width=303 valign=top style='width:251.4pt;border:none;border-bottom:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>pandas DataFrame with</p>
-  <p class=MsoNormal>index : pandas.Timestamp </p>
-  <p class=MsoNormal>and column labeled &quot;mamps_last&quot;:&nbsp; number</p>
+  <p class=MsoNormal>pandas <span class=SpellE>DataFrame</span> with</p>
+  <p class=MsoNormal>index : <span class=SpellE>pandas.Timestamp</span> </p>
+  <p class=MsoNormal>and column labeled &quot;<span class=SpellE>mamps_last</span>&quot;:&nbsp;
+  number</p>
   </td>
   <td width=349 valign=top style='width:4.25in;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>One session's charging profile</p>
-  <p class=MsoNormal><i>Index</i>: time for given datapoint</p>
-  <p class=MsoNormal><i>mamps_last</i>: current at time in mA</p>
+  <p class=MsoNormal><i>Index</i>: time for given <span class=SpellE>datapoint</span></p>
+  <p class=MsoNormal><span class=SpellE><i>mamps_last</i></span>: current at
+  time in mA</p>
   </td>
  </tr>
 </table>
@@ -1484,17 +1525,24 @@ an instance of Entry from a charging session DataFrame.<o:p></o:p></span></p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
   <p class=MsoNormal>Entry with values calculated from profile. </p>
-  <p class=MsoNormal>energyDemand from integrating 'df' and assuming 208 V.</p>
+  <p class=MsoNormal><span class=SpellE>energyDemand</span> from integrating '<span
+  class=SpellE>df</span>' and assuming 208 V.</p>
   </td>
  </tr>
 </table>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h3><a name="_Toc509170143"><span style='mso-fareast-font-family:"Times New Roman"'>is_clean(
-data, min_charge_time = np.timedelta64(20, 'm'), min_average_time_gap =
-np.timedelta64(11, 's'), max_gap_allowed = np.timedelta64(1, 'm'), min_energy =
-1, min_maxpower = 2000, max_time = np.timedelta64(20, 'h') )</span></a><span
+<h3><a name="_Toc509170143"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170143'><span style='mso-fareast-font-family:"Times New Roman"'>is_<span
+class=GramE>clean</span></span></span></span><span style='mso-bookmark:_Toc509170143'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170143'><span style='mso-fareast-font-family:"Times New Roman"'>
+data, <span class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
+class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
+class=SpellE>max_gap_allowed</span> = np.timedelta64(5, 'm'), <span
+class=SpellE>min_energy</span> = 1, <span class=SpellE>min_maxpower</span> =
+2000, <span class=SpellE>max_time</span> = np.timedelta64(20, 'h') )</span></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
 <p class=MsoNormal>Returns True or False based on whether the data meets all
@@ -1505,7 +1553,7 @@ given criteria or not, respectively.</p>
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.35pt'>
-  <td width=170 valign=top style='width:128.55pt;border-top:solid windowtext 1.0pt;
+  <td width=169 valign=top style='width:128.55pt;border-top:solid windowtext 1.0pt;
   border-left:solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;
   border-right:none;padding:0in 5.4pt 0in 5.4pt;height:23.35pt'>
   <p class=MsoNormal>Name</p>
@@ -1522,7 +1570,7 @@ given criteria or not, respectively.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:1'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>data</p>
@@ -1534,16 +1582,14 @@ given criteria or not, respectively.</p>
   <td width=386 valign=top style='width:586.85pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Once charging profile</p>
-  <p class=MsoNormal>Index: time for given datapoint</p>
-  <p class=MsoNormal>mamps_last: current at time in mA</p>
+  <p class=MsoNormal>One charging session</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_charge_time</p>
+  <p class=MsoNormal><span class=SpellE>min_charge_time</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -1558,10 +1604,10 @@ given criteria or not, respectively.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>max_time</p>
+  <p class=MsoNormal><span class=SpellE>max_time</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
@@ -1576,10 +1622,10 @@ given criteria or not, respectively.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>max_gap_allowed</p>
+  <p class=MsoNormal><span class=SpellE>max_gap_allowed</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -1592,16 +1638,16 @@ given criteria or not, respectively.</p>
   valid. </p>
   <p class=MsoNormal>Large gaps indicate connectivity issues with the station.
   Even short gaps seem to cause problematic data. If this is resolved, 10
-  minutes or greater is appropriate.</p>
-  <p class=MsoNormal>Default: 1 minute</p>
+  minutes or greater <span class=GramE>is</span> appropriate.</p>
+  <p class=MsoNormal>Default: 5 minutes</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:5'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_average_time_gap</p>
+  <p class=MsoNormal><span class=SpellE>min_average_time_gap</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
@@ -1610,40 +1656,41 @@ given criteria or not, respectively.</p>
   <td width=386 valign=top style='width:586.85pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Minimum average gap between datapoints in profile. If
-  average gap is large, data has not been recorded frequently enough.</p>
+  <p class=MsoNormal>Minimum average gap between <span class=SpellE>datapoints</span>
+  in profile. If average gap is large, data has not been recorded frequently
+  enough.</p>
   <p class=MsoNormal>Default: 11 seconds</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:6'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_energy</p>
+  <p class=MsoNormal><span class=SpellE>min_energy</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>int or float</p>
+  <p class=MsoNormal><span class=SpellE>int</span> or float</p>
   </td>
   <td width=386 valign=top style='width:586.85pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Minumum energy consumed in the session to be considered
-  valid, in kWh.</p>
+  <p class=MsoNormal><span class=SpellE>Minumum</span> energy consumed in the
+  session to be considered valid, in kWh.</p>
   <p class=MsoNormal>Default: 1 (kWh)</p>
   <p class=MsoNormal>This criterion will be ignored if 0.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:7'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_maxpower</p>
+  <p class=MsoNormal><span class=SpellE>min_maxpower</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>int or float</p>
+  <p class=MsoNormal><span class=SpellE>int</span> or float</p>
   </td>
   <td width=386 valign=top style='width:586.85pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
@@ -1654,10 +1701,10 @@ given criteria or not, respectively.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
-  <td width=170 valign=top style='width:128.55pt;border-top:none;border-left:
+  <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>other_tests</p>
+  <p class=MsoNormal><span class=SpellE>other_tests</span></p>
   </td>
   <td width=151 valign=top style='width:112.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
@@ -1671,6 +1718,11 @@ given criteria or not, respectively.</p>
   <p class=MsoNormal>A list of functions to be run on 'data' and returned.</p>
   <p class=MsoNormal>For example, a function that takes data and returns the
   length of the session.</p>
+  <p class=MsoNormal>Recommend using module functions <span class=SpellE>session_length</span>,
+  <span class=SpellE>average_gap</span>, and <span class=SpellE>max_gap</span>.</p>
+  <p class=MsoNormal>Default: False</p>
+  <p class=MsoNormal>No other tests will be performed if <span class=SpellE>other_tests</span>
+  is False or [].</p>
   </td>
  </tr>
 </table>
@@ -1679,14 +1731,24 @@ given criteria or not, respectively.</p>
 
 <p class=MsoNormal>Boolean, True is the data has no problems, False otherwise.</p>
 
-<h3><a name="_Toc509170144"><span style='mso-fareast-font-family:"Times New Roman"'>clean_data(
-data, min_charge_time = np.timedelta64(20, 'm'), min_average_time_gap =
-np.timedelta64(11, 's'), max_gap_allowed = np.timedelta64(1, 'm'), min_energy =
-1, min_maxpower = 2000, max_time = np.timedelta64(20, 'h'), other_tests = False
-)</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+<h3><a name="_Toc509170144"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170144'><span style='mso-fareast-font-family:"Times New Roman"'>clean_<span
+class=GramE>data</span></span></span></span><span style='mso-bookmark:_Toc509170144'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170144'><span style='mso-fareast-font-family:"Times New Roman"'>
+data, <span class=SpellE>min_charge_time</span> = np.timedelta64(20, 'm'), <span
+class=SpellE>min_average_time_gap</span> = np.timedelta64(11, 's'), <span
+class=SpellE>max_gap_allowed</span> = np.timedelta64(5, 'm'), <span
+class=SpellE>min_energy</span> = 1, <span class=SpellE>min_maxpower</span> =
+2000, <span class=SpellE>max_time</span> = np.timedelta64(20, 'h'), <span
+class=SpellE>other_tests</span> = False )</span></span><span style='mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h3>
 
-<p class=MsoNormal>Returns a tuple with information about whether the data
-meets all given criteria, why, and other tests.</p>
+<p class=MsoNormal>Returns a tuple with information <span class=GramE>about
+whether the data meets all given criteria, why, and other tests</span>. Find
+errors in order: <span class=SpellE>ShortTime</span>, <span class=SpellE>BigGap</span>,
+<span class=SpellE>LongTime</span>, <span class=SpellE>LostDatapoints</span>, <span
+class=SpellE>LittleEnergyUsed</span>, <span class=SpellE><span class=GramE>PowerTooLow</span></span>.</p>
 
 <h4><span style='mso-fareast-font-family:"Times New Roman"'>Parameters<o:p></o:p></span></h4>
 
@@ -1722,16 +1784,14 @@ meets all given criteria, why, and other tests.</p>
   <td width=386 valign=top style='width:1010.0pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Once charging profile</p>
-  <p class=MsoNormal>Index: time for given datapoint</p>
-  <p class=MsoNormal>mamps_last: current at time in mA</p>
+  <p class=MsoNormal>One charging session</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2'>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_charge_time</p>
+  <p class=MsoNormal><span class=SpellE>min_charge_time</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
@@ -1742,7 +1802,7 @@ meets all given criteria, why, and other tests.</p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>Minimum length of session to be valid.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;ShortTime&quot;.</p>
+  return error will be &quot;<span class=SpellE>ShortTime</span>&quot;.</p>
   <p class=MsoNormal>Default: 20 minutes</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
@@ -1751,7 +1811,7 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>max_time</p>
+  <p class=MsoNormal><span class=SpellE>max_time</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
@@ -1762,7 +1822,7 @@ meets all given criteria, why, and other tests.</p>
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>Minimum length of session to be valid.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;BigGap&quot;.</p>
+  return error will be &quot;<span class=SpellE>BigGap</span>&quot;.</p>
   <p class=MsoNormal>Default: 1 minute</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
@@ -1771,7 +1831,7 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>max_gap_allowed</p>
+  <p class=MsoNormal><span class=SpellE>max_gap_allowed</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
@@ -1784,10 +1844,10 @@ meets all given criteria, why, and other tests.</p>
   valid. </p>
   <p class=MsoNormal>Large gaps indicate connectivity issues with the station.
   Even short gaps seem to cause problematic data. If this is resolved, 10
-  minutes or greater is appropriate.</p>
+  minutes or greater <span class=GramE>is</span> appropriate.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;BigGap&quot;.</p>
-  <p class=MsoNormal>Default: 1 minute</p>
+  return error will be &quot;<span class=SpellE>BigGap</span>&quot;.</p>
+  <p class=MsoNormal>Default: 5 minutes</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
  </tr>
@@ -1795,7 +1855,7 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_average_time_gap</p>
+  <p class=MsoNormal><span class=SpellE>min_average_time_gap</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
@@ -1804,10 +1864,11 @@ meets all given criteria, why, and other tests.</p>
   <td width=386 valign=top style='width:1010.0pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Minimum average gap between datapoints in profile. If
-  average gap is large, data has not been recorded frequently enough.</p>
+  <p class=MsoNormal>Minimum average gap between <span class=SpellE>datapoints</span>
+  in profile. If average gap is large, data has not been recorded frequently
+  enough.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;LostDatapoints&quot;.</p>
+  return error will be &quot;<span class=SpellE>LostDatapoints</span>&quot;.</p>
   <p class=MsoNormal>Default: 11 seconds</p>
   <p class=MsoNormal>This criterion will be ignored if None.</p>
   </td>
@@ -1816,19 +1877,19 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_energy</p>
+  <p class=MsoNormal><span class=SpellE>min_energy</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>int or float</p>
+  <p class=MsoNormal><span class=SpellE>int</span> or float</p>
   </td>
   <td width=386 valign=top style='width:1010.0pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>Minumum energy consumed in the session to be considered
-  valid, in kWh.</p>
+  <p class=MsoNormal><span class=SpellE>Minumum</span> energy consumed in the
+  session to be considered valid, in kWh.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;LittleEnergyUsed&quot;.</p>
+  return error will be &quot;<span class=SpellE>LittleEnergyUsed</span>&quot;.</p>
   <p class=MsoNormal>Default: 1 (kWh)</p>
   <p class=MsoNormal>This criterion will be ignored if 0.</p>
   </td>
@@ -1837,18 +1898,18 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid #666666 1.0pt;border-right:none;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>min_maxpower</p>
+  <p class=MsoNormal><span class=SpellE>min_maxpower</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid #666666 1.0pt;background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>int or float</p>
+  <p class=MsoNormal><span class=SpellE>int</span> or float</p>
   </td>
   <td width=386 valign=top style='width:1010.0pt;border-top:none;border-left:
   none;border-bottom:solid #666666 1.0pt;border-right:solid windowtext 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal>Minimum power reached for session to be valid, in Watts.</p>
   <p class=MsoNormal>If 'data' does not pass this criterion, second element of
-  return error will be &quot;PowerTooLow&quot;.</p>
+  return error will be &quot;<span class=SpellE>PowerTooLow</span>&quot;.</p>
   <p class=MsoNormal>Default: 2000 (W)</p>
   <p class=MsoNormal>This criterion will be ignored if 0.</p>
   </td>
@@ -1857,7 +1918,7 @@ meets all given criteria, why, and other tests.</p>
   <td width=169 valign=top style='width:128.55pt;border-top:none;border-left:
   solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:
   none;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal>other_tests</p>
+  <p class=MsoNormal><span class=SpellE>other_tests</span></p>
   </td>
   <td width=152 valign=top style='width:116.95pt;border:none;border-bottom:
   solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
@@ -1877,7 +1938,8 @@ meets all given criteria, why, and other tests.</p>
 
 <h4><span style='mso-fareast-font-family:"Times New Roman"'>Returns<o:p></o:p></span></h4>
 
-<p class=MsoNormal>(is_clean, error, other_results*)</p>
+<p class=MsoNormal>(<span class=SpellE>is_clean</span>, error, <span
+class=SpellE>other_results</span>*)</p>
 
 <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0in 0in 0in 0in'>
@@ -1901,11 +1963,11 @@ meets all given criteria, why, and other tests.</p>
  <tr style='mso-yfti-irow:1;height:15.25pt'>
   <td width=110 valign=top style='width:83.7pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal>is_clean</p>
+  <p class=MsoNormal><span class=SpellE>is_clean</span></p>
   </td>
   <td width=71 valign=top style='width:53.3pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal>boolean</p>
+  <p class=MsoNormal><span class=SpellE>boolean</span></p>
   </td>
   <td width=527 valign=top style='width:1114.0pt;border:none;border-bottom:
   solid #666666 1.0pt;background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;
@@ -1924,16 +1986,19 @@ meets all given criteria, why, and other tests.</p>
   </td>
   <td width=527 valign=top style='width:1114.0pt;border:none;border-bottom:
   solid #666666 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal>Corresponding to passing all tests (ValidData) or which
-  criterion failed.</p>
-  <p class=MsoNormal>One of: ValidData, ShortTime, BigGap, LongTime, LostDatapoints,
-  LittleEnergyUsed, PowerTooLow, </p>
+  <p class=MsoNormal>Corresponding to <span class=GramE>passing all tests (<span
+  class=SpellE>ValidData</span>) or which criterion failed</span>. </p>
+  <p class=MsoNormal>Options (in order of which checked first): <span
+  class=SpellE>ShortTime</span>, <span class=SpellE>BigGap</span>, <span
+  class=SpellE>LongTime</span>, <span class=SpellE>LostDatapoints</span>, <span
+  class=SpellE>LittleEnergyUsed</span>, <span class=SpellE>PowerTooLow</span>, <span
+  class=SpellE>ValidData</span>.</p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:15.25pt'>
   <td width=110 valign=top style='width:83.7pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
-  <p class=MsoNormal>other_results* (optional)</p>
+  <p class=MsoNormal><span class=SpellE>other_results</span>* (optional)</p>
   </td>
   <td width=71 valign=top style='width:53.3pt;border:none;border-bottom:solid #666666 1.0pt;
   background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;height:15.25pt'>
@@ -1943,78 +2008,112 @@ meets all given criteria, why, and other tests.</p>
   solid #666666 1.0pt;background:#CCCCCC;padding:0in 5.4pt 0in 5.4pt;
   height:15.25pt'>
   <p class=MsoNormal>Each element corresponds to the output of each function in
-  'other_tests', in order.</p>
+  '<span class=SpellE>other_tests</span>', in order.</p>
   </td>
  </tr>
 </table>
 
-<h3><a name="_Toc509170145"><span style='mso-fareast-font-family:"Times New Roman"'>session_length(
-data )</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+<h3><a name="_Toc509170145"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170145'><span style='mso-fareast-font-family:"Times New Roman"'>session_<span
+class=GramE>length</span></span></span></span><span style='mso-bookmark:_Toc509170145'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170145'><span style='mso-fareast-font-family:"Times New Roman"'>
+data )</span></span><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
 <p class=MsoNormal>Takes data of type Entry </p>
 
-<p class=MsoNormal>Returns the length of time from the first datapoint to last
-in a profile.</p>
+<p class=MsoNormal>Returns the length of time from the first <span
+class=SpellE>datapoint</span> to last in a profile.</p>
 
-<h3><a name="_Toc509170146"><span style='mso-fareast-font-family:"Times New Roman"'>datapoint_fraction(
-data, supposed_time_gap = np.timedelta64(10, 's') )</span></a><span
+<h3><a name="_Toc509170146"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170146'><span style='mso-fareast-font-family:"Times New Roman"'>datapoint_<span
+class=GramE>fraction</span></span></span></span><span style='mso-bookmark:_Toc509170146'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170146'><span style='mso-fareast-font-family:"Times New Roman"'>
+data, <span class=SpellE>supposed_time_gap</span> = np.timedelta64(10, 's') )</span></span><span
 style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
-<p class=MsoNormal>Takes data of type Entry and an expected timedelta of type
+<p class=MsoNormal>Takes data of type Entry and an expected <span class=SpellE>timedelta</span>
+of type numpy.timedelta64.</p>
+
+<p class=MsoNormal>Returns the fraction of <span class=SpellE>datapoints</span>
+in a profile compared to the number of points expected based on the length of
+time and given '<span class=SpellE>supposed_time_gap</span>'.</p>
+
+<h3><a name="_Toc509170147"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170147'><span style='mso-fareast-font-family:"Times New Roman"'>average_<span
+class=GramE>gap</span></span></span></span><span style='mso-bookmark:_Toc509170147'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170147'><span style='mso-fareast-font-family:"Times New Roman"'>
+data )</span></span><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+
+<p class=MsoNormal>Takes data of type Entry </p>
+
+<p class=MsoNormal>Returns the average gap in time between consecutive <span
+class=SpellE>datapoints</span> in the <span class=SpellE>data.profile</span> as
 numpy.timedelta64.</p>
 
-<p class=MsoNormal>Returns the fraction of datapoints in a profile compared to
-the number of points expected based on the length of time and given
-'supposed_time_gap'.</p>
+<h3><a name="_Toc509170148"></a><span class=SpellE><span style='mso-bookmark:
+_Toc509170148'><span style='mso-fareast-font-family:"Times New Roman"'>max_<span
+class=GramE>gap</span></span></span></span><span style='mso-bookmark:_Toc509170148'><span
+class=GramE><span style='mso-fareast-font-family:"Times New Roman"'>(</span></span></span><span
+style='mso-bookmark:_Toc509170148'><span style='mso-fareast-font-family:"Times New Roman"'>
+data, <span class=SpellE>more_info</span> = False )</span></span><span
+style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
 
-<h3><a name="_Toc509170147"><span style='mso-fareast-font-family:"Times New Roman"'>average_gap(
-data )</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+<p class=MsoNormal>Takes data of type Entry and <span class=SpellE>more_info</span>
+of type bool.</p>
 
-<p class=MsoNormal>Takes data of type Entry </p>
+<p class=MsoNormal>Returns the maximum gap in time between two consecutive <span
+class=SpellE>datapoints</span> in the <span class=SpellE>data.profile</span>.</p>
 
-<p class=MsoNormal>Returns the average gap in time between consecutive
-datapoints in the data.profile.</p>
-
-<h3><a name="_Toc509170148"><span style='mso-fareast-font-family:"Times New Roman"'>max_gap(
-data )</span></a><span style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
-
-<p class=MsoNormal>Takes data of type Entry </p>
-
-<p class=MsoNormal>Returns the maximum gap in time between two consecutive
-datapoints in the data.profile.</p>
+<p class=MsoNormal>If <span class=SpellE>more_<span class=GramE>info</span></span><span
+class=GramE>,</span> returns tuple of (max difference, fraction from 0 to 1, <span
+class=SpellE>pandas.timeStamp</span>) where fraction is how far into the
+session (as fraction of whole session) the first large gap was and the <span
+class=SpellE>pandas.Timestamp</span> is what time the first large gap occurred.</p>
 
 <h3><a name="_Toc509170149"><span style='mso-fareast-font-family:"Times New Roman"'>Helper
-functions for 'is_clean' and 'clean_data'</span></a><span style='mso-fareast-font-family:
+functions for '</span></a><span class=SpellE><span style='mso-bookmark:_Toc509170149'><span
+style='mso-fareast-font-family:"Times New Roman"'>is_clean</span></span></span><span
+style='mso-bookmark:_Toc509170149'><span style='mso-fareast-font-family:"Times New Roman"'>'
+and '<span class=SpellE>clean_data</span>'</span></span><span style='mso-fareast-font-family:
 "Times New Roman"'> <o:p></o:p></span></h3>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_long_enough(data,
-min_charge_time)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>long_<span class=GramE>enough</span></span><span class=GramE>(</span>data,
+<span class=SpellE>min_charge_time</span>)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Check charge period is long enough</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_no_gap(data,
-max_gap_allowed)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>no_<span class=GramE>gap</span></span><span class=GramE>(</span>data,
+<span class=SpellE>max_gap_allowed</span>)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Check that all gaps are small enough</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_short_enough(data,
-max_time)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>short_<span class=GramE>enough</span></span><span class=GramE>(</span>data,
+<span class=SpellE>max_time</span>)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Check if charge session is too long</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_enough_points(data,
-min_average_time_gap)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>enough_<span class=GramE>points</span></span><span class=GramE>(</span>data,
+<span class=SpellE>min_average_time_gap</span>)<o:p></o:p></span></h4>
 
-<p class=MsoNormal>Check the profile has enough data points (loss of
-datapoints)</p>
+<p class=MsoNormal>Check the profile has enough data points (loss of <span
+class=SpellE>datapoints</span>)</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_enough_energy_used(data,
-min_energy)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>enough_energy_<span class=GramE>used</span></span><span
+class=GramE>(</span>data, <span class=SpellE>min_energy</span>)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Check the profile consumed enough energy</p>
 
-<h4><span style='mso-fareast-font-family:"Times New Roman"'>_enough_power(data,
-min_maxpower)<o:p></o:p></span></h4>
+<h4><span style='mso-fareast-font-family:"Times New Roman"'>_<span
+class=SpellE>enough_<span class=GramE>power</span></span><span class=GramE>(</span>data,
+<span class=SpellE>min_maxpower</span>)<o:p></o:p></span></h4>
 
 <p class=MsoNormal>Check the profile had high enough maximum power</p>
 

@@ -16,34 +16,23 @@ import data_cleaner as dc
 # 
 # For now, the selected ones are those that are clean.
 #
-# Example: python directory_cleaner.py "../Data/All-Caltech/" "New Caltech"
+# Example: python directory_cleaner.py "../Data/All-Caltech/" "output"
 Usage = " \n Usage: python %s source_directory output_filename" % sys.argv[0]
 
 ex_dir = "../Data/All-Caltech/"
 # ex_file = "0003020330_2017-12-21-12-56-50.pkl" 
-# TODO Weirdness: 0003020330_2017-12-21-12-56-50.pkl limit is sometimes smaller than value.
 
+# Exceptions
 class InvalidArgs(Exception) : pass
 class InvalidDirectory(InvalidArgs): pass
 
 
-# Given a dataFrame with columns, plot the count of 
-# col1 and col2.
-# Ex: Given columns 
-# 'error', 'station_id', 'year', 'month', 'day', 'hour', 'min', 'sec'
-# col1 = 'error', col2 = 'station_id'. 
-# Plots a bar chart correlating the two.
-def group_invalids(invalids, col1, col2):
-    # Two options:
-    # pandas.crosstab(invalids.error, invalids.station_id)
-    grouped = invalids.groupby([col1, col2]).size().reset_index(name='count')
-    return grouped
-
 ## Input and Output functions
 
 # Load and returns object that was packaged with pickle
+# This is taking a lot of time.
 def load_obj(file_source):
-    # with assures that the file will be closed properly
+    # "with" assures that the file will be closed properly
     with open(file_source, 'rb') as file:
         data = pickle.load(file)
     return data
@@ -100,31 +89,28 @@ def df_to_excel(df, filename, directory = "../Output"):
     df.to_excel(writer, 'Data')
     writer.save()
 
-def df_to_writer(df, excel_writer):
-    df.to_excel(excel_writer, 'Data')
-    excel_writer.save()
-
+# Doesn't work yet. The goal would be to make this automatic.
 # Given a path name and a new pathname, uses 'path' as a template and
 # opens/creates/returns a pandas ExcelWriter with the template.
-def excel_template_writer(filename, new_directory="../Output/", \
-                          template_path="../Output/Template.xlsx"):
-    from openpyxl import load_workbook
-    # Duplicate the template
-    #shutil.copyfile(template_path, new_directory + filename)
-    # Load the template
-    template = load_workbook("../Output/Template.xlsx")
-    # Create the writer
-    #writer = pd.ExcelWriter(new_directory + filename + ".xlsx", engine = 'openpyxl')
-    # Put template in writer
-    #writer.book = template
-    return 1
+# def excel_template_writer(filename, new_directory="../Output/", \
+ #                         template_path="../Output/Template.xlsx"):
+ #   from openpyxl import load_workbook
+ #   # Duplicate the template
+ #   #shutil.copyfile(template_path, new_directory + filename)
+ #   # Load the template
+ #   template = load_workbook("../Output/Template.xlsx")
+ #   # Create the writer
+ #   #writer = pd.ExcelWriter(new_directory + filename + ".xlsx", engine = 'openpyxl')
+ #   # Put template in writer
+ #   #writer.book = template
+ #   return 1
 
 
 # Returns tuple of (bool, error) where bool is True if data is clean and False
 # otherwise. error indicates the reason for bool.
 def is_clean_df(df):
     data = dc.df_to_entry(df)
-    is_clean = dc.clean_data(data, more_info = True)
+    is_clean = dc.is_clean(data)
     return is_clean
     
 # Outputs dataframe of station info. 'id' is index. Also has 'type', 'max_mA',
@@ -169,17 +155,38 @@ def long_df(df):
     else: return None
 long_df.cols = ['length']
 
-# Checks number of datapoints and length of sessions
+# Checks most information available
 def datapoint_length_vals(df):
     data = dc.df_to_entry(df)
     tests = (lambda data: dc.session_length(data) / np.timedelta64(1, 'h'),
              lambda data: dc.average_gap(data) / np.timedelta64(1, 's'),
-             lambda data: dc.max_gap(data) / np.timedelta64(1, 'm'))
-    results = list(dc.clean_data(data, more_info = True, other_tests = tests))
+             lambda data: dc.max_gap(data) / np.timedelta64(1, 'm'),
+             lambda data: data.energyDemand)
+    results = list(dc.clean_data(data, other_tests = tests))
     return results
 # Corresponding to datapoint_length_vals. Name of data returned.
-datapoint_length_vals.cols = ['is_valid', 'error',
-                              'length (hr)', 'average_gap (s)', 'max_gap (min)']
+datapoint_length_vals.cols = ['is_valid', 'error', \
+                              'length (hr)', 'average_gap (s)', \
+                              'max_gap (min)', 'energy (AV)']
+
+# Checks information relevant to large and problematic gaps
+def gap_vals(df):
+    data = dc.df_to_entry(df)
+    tests = (lambda data: dc.session_length(data) / np.timedelta64(1, 'h'),
+             lambda data: dc.max_gap(data, more_info = True),
+             lambda data: data.energyDemand)
+    results = list(dc.clean_data(data, other_tests = tests))
+    
+    # Deal with gap tuple
+    gap_info = results[3]
+     # Convert gap length to minute
+    results[3] = gap_info[0] / np.timedelta64(1, 'm')
+    results.append(gap_info[2])
+        
+    return results
+# Corresponding to datapoint_length_vals. Name of data returned.
+gap_vals.cols = ['is_valid', 'error', 'session_length (hr)',
+                              'max_gap (min)', 'energy (AV)', 'time_max_gap']
 
 # Helper for clean_directory
 # Given 0003020330_2017-12-21-12-56-50.pkl returns 
